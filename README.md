@@ -1,3 +1,5 @@
+Проект создан в декабре 2016 в рамках изучения Angulag2
+
 # Todos
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
