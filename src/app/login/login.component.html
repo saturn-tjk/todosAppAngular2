@@ -1,0 +1,12 @@
+<div class="login">
+
+  <form (ngSubmit) = "login(form)" #form = "ngForm">
+    <input type="text" placeholder="User Name" required
+          ngModel name="name">
+    <input type="password" placeholder="Password" required
+           ngModel name="password">
+    <button type="submit">LogIn</button>
+  </form>
+
+
+</div>

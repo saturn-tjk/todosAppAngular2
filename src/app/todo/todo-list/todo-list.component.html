@@ -1,0 +1,11 @@
+
+<app-todo-form></app-todo-form>
+
+<div class="todo-list">
+  <app-todo-item *ngFor="let todo of todos; let id = index"
+                 [id]="id"
+                 [todo]="todo"
+                 (changed)="changeTodo($event)"
+                 (deleted)="deleteTodo($event)">
+  </app-todo-item>
+</div>

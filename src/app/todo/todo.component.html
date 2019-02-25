@@ -1,0 +1,11 @@
+
+<div class="content">
+    <div class="todo">
+        <a [routerLink] = "['list']">Show todo list </a>
+        <label for="todo-id"> ||| Enter todo id: </label>
+        <input type="text" id="todo-id" #i>
+        <button (click)="showTodoDetail(i)">Show detail</button>
+    </div>
+
+    <router-outlet></router-outlet>
+</div>

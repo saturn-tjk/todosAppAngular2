@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    .content {
+      position: absolute;
+      width: 50%;
+      height: 60%;
+      top: 20%;
+      left: 25%;
+    }
+
+    .todo-form {
+      position: absolute;
+      width: 90%;
+      height: 40px;
+      left: 5%;
+      top: 5px;
+      border: 2px solid #4f4f4f;
+    }
+
+    .todo-form input {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5px;
+      width: 88%;
+      height: 70%;
+      border: 1px solid #4f4f4f;
+
+    }
+
+    .todo-form button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 5px;
+      height: 70%;
+        width: 9%;
+    }
+
+    .todo-list {
+      position: absolute;
+      top: 50px;
+      left: 5%;
+      width: 90%;
+      height: calc(100% - 55px);
+      border: 2px solid #4f4f4f;
+      overflow-y: auto;
+    }
+
+    .todo-item {
+      margin: 5px;
+      border: 2px solid #4f4f4f;
+
+    }
+
+    .show-mode {
+      overflow: auto;
+      position: relative;
+      height: 40px;
+      margin: 5px;
+    }
+
+    .show-mode span {
+      display: block;
+      width: 80%;
+      float: left;
+
+    }
+
+    .show-mode button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 5px;
+      width: 30px;
+      height: 30px;
+
+    }
+
+    .show-mode button:nth-child(3) {
+      right: 40px;
+    }
+
+    .edit-mode {
+      overflow: auto;
+      position: relative;
+      height: 40px;
+      margin: 5px;
+
+    }
+
+    .edit-mode input {
+      width: 90%;
+      height: 80%;
+      float: left;
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+
+    }
+
+    .edit-mode button {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="content">
+
+  <div class="todo-form">
+    <input type="text">
+    <button>Add todo</button>
+  </div>
+
+  <div class="todo-list">
+
+<!-------- Item --------------------------------------------->
+    <div class="todo-item">
+
+      <div class="show-mode">
+        <span> <h4>Title Title Title Title Title Title Title Title Title</h4></span>
+        <span>Added at 11.11.11 Updated at 12.12.12 </span>
+        <button>edit</button>
+        <button>del</button>
+      </div>
+      <div class="edit-mode">
+        <input type="text">
+        <button>save</button>
+      </div>
+
+    </div>
+
+<!---------Item----------------->
+    </div>
+
+  </div>
+
+
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

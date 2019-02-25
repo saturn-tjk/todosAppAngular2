@@ -1,0 +1,4 @@
+<div class="todo-form">
+    <input type="text" #input (keyup)="addTodo($event, input)">
+    <button (click)="addTodo(null, input)">Add todo</button>
+</div>

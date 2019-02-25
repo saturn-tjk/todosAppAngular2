@@ -1,0 +1,27 @@
+.todo-form {
+    position: absolute;
+    width: 90%;
+    height: 40px;
+    left: 5%;
+    top: 50px;
+}
+
+.todo-form input {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    width: 88%;
+    height: 70%;
+    border: 1px solid #4f4f4f;
+
+}
+
+.todo-form button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    height: 70%;
+    width: 9%;
+}

@@ -1,0 +1,21 @@
+.login {
+    position: absolute;
+    left: 50%;
+    top: calc(20% + 100px);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+}
+
+.login form input {
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.login form button {
+    width: 80px;
+    height: 40px;
+    float: right;
+}

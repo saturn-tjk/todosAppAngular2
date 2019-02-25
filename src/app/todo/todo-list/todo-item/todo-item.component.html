@@ -1,0 +1,26 @@
+<div *ngIf="todo" class="todo-item">
+
+  <div *ngIf="!editMode" class="show-mode">
+    <a [routerLink] = "['/todo/detail', id]">
+      <span> <h3> {{id}}) {{todo.title}} </h3> Added by {{todo.addedUser}}
+        <span>Added at  {{todo.addedDate.toDateString()}}</span>
+        <span *ngIf="todo.updatedDate">Updated at {{todo.updatedDate.toDateString()}}</span>
+      </span>
+    </a>
+
+    <button (click)="switchEditMode()" >
+      <img alt="edit" src="img/edit.png">
+    </button>
+    <button (click)="onDeleted()">
+      <img alt="delete" src="img/delete.png">
+    </button>
+  </div>
+
+  <div *ngIf="editMode" class="edit-mode">
+    <input type="text" [(ngModel)] = "todo.title">
+    <button (click)="onChanged(); switchEditMode()">
+      <img alt="save" src="img/save.png">
+    </button>
+  </div>
+
+</div>

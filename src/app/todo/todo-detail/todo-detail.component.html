@@ -1,0 +1,17 @@
+<div *ngIf="todo" class="todo-detail">
+
+  <p><b>Todo Id:</b> {{id}}</p>
+  <p><b>Todo title:</b> {{todo.title}}</p>
+  <p><b>Added at:</b> {{todo.addedDate.toDateString()}}</p>
+  <p *ngIf="todo.updatedDate">
+    <b>Updated at:</b> {{todo.updatedDate.toDateString()}}
+  </p>
+  <p><b>Added by:</b> {{todo.addedUser}}</p>
+  <a [routerLink] = "['/todo/list']">Back to list</a>
+
+</div>
+<br>
+<p *ngIf="!todo" style="text-align: center">
+  <b>There is no Todo with id {{id}}!</b> ||
+  <a [routerLink] = "['/todo/list']">Back to list</a>
+</p>

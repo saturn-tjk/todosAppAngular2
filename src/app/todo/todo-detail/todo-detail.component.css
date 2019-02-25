@@ -1,0 +1,15 @@
+.todo-detail {
+  border: 2px solid #cab0b0;
+  padding: 10px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.todo-detail a {
+  border: 1px solid #473f8b;
+  background-color: #c9c7ab;
+  padding: 4px;
+  margin: 2px;
+  display: block;
+  float: left;
+}

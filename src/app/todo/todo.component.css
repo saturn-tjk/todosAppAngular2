@@ -1,0 +1,27 @@
+.content {
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    top: 20%;
+    left: 20%;
+
+}
+
+.todo {
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #cab0b0;
+  padding: 10px;
+
+}
+
+.todo  input {
+    font-size: 15px;
+    width: 45px;
+    height: 25px;
+}
+
+.todo button {
+    font-size: 15px;
+    padding: 2px;
+}
